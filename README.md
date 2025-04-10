@@ -1,5 +1,7 @@
 # 协商缓存和强缓存
 
+> `nodejs http 服务器代码`https://github.com/linzhe141/cache-demo/blob/main/index.js
+
 ## 强缓存
 
 当浏览器第一次请求一个资源时，服务器在响应头加上`"Cache-Control": "max-age=3600"`，并且`HTTP的状态码为200`，然后浏览器接收到响应后，就把这个资源加入到浏览器缓存中，那么下次在没有过期前访问这个资源时，就会直接命中浏览器缓存了，并且不会在向服务器发送请求了。
